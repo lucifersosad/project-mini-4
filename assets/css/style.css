@@ -303,15 +303,15 @@
   background-size: cover;
 }
 
-.work-process .box-head .inner-title {
+.work-process__inner-title {
   color: #fff;
 }
 
-.work-process .box-head .inner-desc {
+.work-process__desc {
   color: #fff;
 }
 
-.work-process .inner-box {
+.work-process__box {
   background: #fff;
   padding: 20px;
   border-radius: 20px;
@@ -327,12 +327,12 @@
   cursor: pointer;
 }
 
-.work-process .inner-box .inner-image {
+.work-process__image {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-.work-process .inner-box .inner-title {
+.work-process__title {
   font-weight: 400;
   font-size: 17px;
   color: #1e1e1e;
@@ -341,14 +341,14 @@
   margin-top: 20px;
 }
 
-.work-process .inner-box .inner-desc {
+.work-process__desc {
   font-weight: 400;
   font-size: 14px;
   color: #777;
   letter-spacing: 0.75px;
 }
 
-.work-process .inner-box::before {
+.work-process__desc::before {
   content: "";
   position: absolute;
   background: red;
@@ -362,13 +362,13 @@
   border-radius: 20px;
 }
 
-.work-process .inner-box:hover {
+.work-process__box:hover {
   transform: translateY(-12px);
 }
 
 /* End Work Precess */
 /* Say  */
-.say .inner-box {
+.say__box {
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -376,18 +376,18 @@
   padding-bottom: 25px;
 }
 
-.say .inner-box .inner-image {
+.say__image {
   margin-left: 25px;
   font-size: 30px;
   color: #4E47DE;
   text-align: center;
 }
 
-.say .inner-box .inner-image img {
+.say__image img {
   margin-top: 35px;
 }
 
-.say .inner-box .inner-content {
+.say__content {
   margin-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
@@ -399,11 +399,11 @@
   line-height: 26px;
 }
 
-.say .inner-box .inner-info {
+.say__info {
   display: flex;
 }
 
-.say .inner-box .inner-info .inner-avatar {
+.say__avatar {
   width: 60px;
   height: 60px;
   border-radius: 100px;
@@ -411,23 +411,23 @@
   margin-left: 25px;
 }
 
-.say .inner-box .inner-info .inner-name {
+.say__name {
   margin-left: 20px;
   margin-top: 8px;
   transition: all 0.3s ease 0s;
 }
 
-.say .inner-box .inner-info .inner-name:hover {
+.say__name:hover {
   transform: translateX(10px);
 }
 
-.say .inner-box .inner-info .inner-name .inner-full-name {
+.say__full-name {
   font-weight: 400;
   font-size: 17px;
   letter-spacing: 0.25px;
 }
 
-.say .inner-box .inner-info .inner-name .inner-job {
+.say__job {
   font-weight: 400;
   font-size: 15px;
   color: #ff589e;
@@ -442,7 +442,7 @@
   background: #f2f2fe;
 }
 
-.pricing-plans .inner-box {
+.pricing-plans__box {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -452,7 +452,7 @@
   text-align: center;
 }
 
-.pricing-plans .inner-box .inner-title {
+.pricing-plans__title {
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.25px;
@@ -460,7 +460,7 @@
   line-height: 40px;
 }
 
-.pricing-plans .inner-box .inner-price-tag {
+.pricing-plans__price-tag {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 13px;
@@ -473,31 +473,31 @@
   color: #fff;
 }
 
-.pricing-plans .inner-box .inner-price-tag.active {
+.pricing-plans__price-tag.active {
   background-color: var(--color-pink);
 }
 
-.pricing-plans .inner-box .inner-price-tag .inner-price .inner-currency {
+.pricing-plans__currency {
   font-weight: 500;
   font-size: 32px;
 }
 
-.pricing-plans .inner-box .inner-price-tag .inner-price .inner-money {
+.pricing-plans__money {
   font-weight: 500;
   font-size: 28px;
 }
 
-.pricing-plans .inner-box .inner-price-tag .inner-time {
+.pricing-plans__time {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.88px;
 }
 
-.pricing-plans .inner-box .inner-content {
+.pricing-plans__content {
   margin-bottom: 40px;
 }
 
-.pricing-plans .inner-box .inner-content li {
+.pricing-plans__content li {
   margin-bottom: 12px;
   font-weight: 400;
   font-size: 13px;
@@ -505,7 +505,7 @@
   letter-spacing: 0.25px;
 }
 
-.pricing-plans .inner-box .inner-content li.active {
+.pricing-plans__content li.active {
   text-decoration: line-through;
 }
 
@@ -561,17 +561,17 @@
   padding-top: 30px;
 }
 
-.footer ul {
+.footer__logo {
   display: flex;
   justify-content: center;
 }
 
-.footer ul li {
+.footer__logo li {
   margin: 0px 10px;
   display: inline-block;
 }
 
-.footer ul li a {
+.footer__logo li a {
   color: #9d5bd9;
   text-align: center;
   background-color: #fff;
@@ -584,12 +584,12 @@
   transition: all 0.3s ease 0s;
 }
 
-.footer ul li a:hover {
+.footer__logo li a:hover {
   color: #fff;
   background-color: var(--color-pink);
 }
 
-.footer .inner-copyright {
+.footer__copyright {
   text-align: center;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
   margin-top: 30px;
